@@ -6,6 +6,10 @@
   <title>Mood Boards - ABHILASH Contemporary Artist</title>
   <meta name="description" content="Visual blueprints that guide the creative process by ABHILASH.">
   <meta name="author" content="ABHILASH">
+  <meta property="og:title" content="Mood Boards - ABHILASH Contemporary Artist">
+  <meta property="og:description" content="Visual blueprints that guide the creative process by ABHILASH.">
+  <meta property="og:image" content="https://yourdomain.com/images/image-34.jpg">
+  <meta property="og:url" content="https://yourdomain.com/mood-boards.html">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -19,7 +23,7 @@
         <a href="mood-boards.html" class="font-medium text-foreground hover:text-accent transition-colors active">Mood Boards</a>
         <a href="mailto:Abhichalissery@gmail.com" class="button-primary">Contact</a>
       </nav>
-      <button class="mobile-menu-toggle md:hidden">
+      <button class="mobile-menu-toggle md:hidden" aria-label="Toggle Mobile Menu">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
@@ -71,6 +75,13 @@
         <div class="mood-board-image-container aspect-ratio-container rounded-2xl overflow-hidden shadow-xl">
           <img src="/images/pic01.jpg" alt="Mood Board Image" class="mood-board-current-image w-full h-full object-cover cursor-pointer">
         </div>
+      </div>
+    </section>
+    
+    <!-- Mood Board Collage -->
+    <section class="mb-20">
+      <div class="mood-board-collage grid grid-cols-2 md:grid-cols-4 gap-4">
+        <!-- Images will be dynamically inserted here -->
       </div>
     </section>
     
@@ -126,12 +137,12 @@
         <div class="footer-social">
           <h3 class="text-lg font-medium mb-4">Follow</h3>
           <div class="social-icons flex space-x-4">
-            <a href="#" class="social-icon">
+            <a href="#" class="social-icon" aria-label="Follow on Facebook">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
               </svg>
             </a>
-            <a href="#" class="social-icon">
+            <a href="#" class="social-icon" aria-label="Follow on Instagram">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
@@ -147,7 +158,8 @@
     </div>
   </footer>
 
-  <script src="./js/mood-boards.js"></script>
+  <script src="./js/moodboard-data.js"></script>
+  <script src="./js/moodboard.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>
