@@ -1,5 +1,3 @@
-
-// Define all images for the mood board collage
 const moodboardImages = [
   "/images/image-1.jpg",
   "/images/image-2.jpg",
@@ -7,9 +5,9 @@ const moodboardImages = [
   "/images/image-4.jpg",
   "/images/image-5.jpg",
   "/images/image-6.jpg",
-  "/images/image-7.jpg", 
+  "/images/image-7.jpg",
   "/images/image-8.jpg",
-  "/images/image-10.jpg", 
+  "/images/image-10.jpg",
   "/images/image-12.jpg",
   "/images/image-15.jpg",
   "/images/image-17.jpg",
